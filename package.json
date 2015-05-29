@@ -1,7 +1,7 @@
 {
 	"name": "stb-cli",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Command-line interface for STB framework.",
 	"author": {
 		"name": "Stanislav Kalashnik",
 		"email": "sk@infomir.eu"

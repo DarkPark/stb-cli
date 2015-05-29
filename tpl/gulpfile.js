@@ -1,5 +1,11 @@
 /**
  * Gulp main entry point.
+ * Available config paths to redefine:
+ *     global.paths.root
+ *     global.paths.tasks
+ *     global.paths.app
+ *     global.paths.build
+ *     global.paths.config
  *
  * @author Stanislav Kalashnik <sk@infomir.eu>
  * @license GNU GENERAL PUBLIC LICENSE Version 3
@@ -7,42 +13,10 @@
 
 'use strict';
 
-var fs   = require('fs'),
-	path = require('path');
+
+// include common tasks
+require('./node_modules/stb/gulpfile');
 
 
-/**
- * Load all js modules from the given directory.
- *
- * @param {string} dir folder with modules
- */
-function load ( dir ) {
-	// may be missing
-	if ( fs.existsSync(dir) ) {
-		// get file list and walk through it
-		require('fs').readdirSync(dir).forEach(function ( name ) {
-			// make correct absolute path
-			name = path.join(dir, name);
-			// check file type
-			if ( path.extname(name) === '.js' ) {
-				require(name);
-			}
-		});
-	}
-}
-
-
-// enable colors in console
-require('tty-colors');
-
-// general app paths
-global.paths = {
-	root:   __dirname,
-	tasks:  path.join(__dirname, 'tasks'),
-	app:    path.join(__dirname, 'app'),
-	build:  path.join(__dirname, 'build'),
-	config: path.join(__dirname, 'config')
-};
-
-// load tasks
-load(global.paths.tasks);
+// redefine global path
+// or add your tasks here

@@ -1,8 +1,8 @@
 STB single page application framework
 =====================================
 
-[![NPM version](https://img.shields.io/npm/v/stb.svg?style=flat-square)](https://www.npmjs.com/package/stb)
-[![Dependencies Status](https://img.shields.io/david/darkpark/stb.svg?style=flat-square)](https://david-dm.org/darkpark/stb)
+[![NPM version](https://img.shields.io/npm/v/stb-cli.svg?style=flat-square)](https://www.npmjs.com/package/stb-cli)
+[![Dependencies Status](https://img.shields.io/david/darkpark/stb-cli.svg?style=flat-square)](https://david-dm.org/darkpark/stb-cli)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/stb)
 
 Provides development environment and base components in a form of [CommonJS](http://wiki.commonjs.org/wiki/CommonJS) modules
