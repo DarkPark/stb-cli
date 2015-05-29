@@ -1,0 +1,27 @@
+{
+	"name": "stb-cli",
+	"version": "1.0.0",
+	"description": "",
+	"author": {
+		"name": "Stanislav Kalashnik",
+		"email": "sk@infomir.eu"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:DarkPark/stb.git"
+	},
+	"bin": "./bin/stb-cli.js",
+	"dependencies": {
+		"commander": "^2.8.1",
+		"ncp": "^2.0.0"
+	},
+	"keywords": [
+		"stb",
+		"cli",
+		"device",
+		"tv",
+		"devkit",
+		"framework"
+	],
+	"license": "GPL-3.0"
+}
